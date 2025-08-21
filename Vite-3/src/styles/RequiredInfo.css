@@ -1,0 +1,505 @@
+.required-info-section {
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .required-info-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 16px 0;
+  }
+  
+  .clipboard-icon {
+    flex-shrink: 0;
+  }
+  
+  .required-info-text {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #202224;
+    line-height: 1.2;
+  }
+  
+  .section-heading {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #202224;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  .info-card {
+    background: rgba(249,250,251,1);
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 24px;
+    width: 100%;
+    min-height: 600px;
+    box-sizing: border-box;
+  }
+  
+  .table-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .table-header,
+  .table-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1.2fr 1.2fr 1fr 1fr 1fr 1fr 1.2fr;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 16px;
+  }
+  
+  .table-header {
+    background-color: #64a1f0;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 600;
+    color: #495057;
+   
+  }
+  
+  .table-row {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .table-row:last-child {
+    border-bottom: none;
+  }
+  
+  .table-header {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #495057;
+    padding: 12px 16px;
+    border-bottom: 1px solid #E5E7EB;
+    background-color: #EFF6FF;
+  }
+  
+  .table-row {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: #202224;
+    padding: 12px 16px;
+  }
+  
+  .cell-header {
+    font-weight:bold ;
+    color:black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  .cell {
+   
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  
+  .reason-select {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 6px 36px 6px 12px;
+    background: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #202224;
+  }
+
+  .reason-select[value=""] {
+    color: #9aa0a6;
+  }
+  
+  .remarks-input {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 6px 10px;
+    background-color: #ffffff;
+    color:black
+  }
+
+  /* New form section */
+  .form-section {
+    margin-top: 24px;
+    padding: 0 8px;
+  }
+
+  .section-subheading {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #202224;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 8px 0 20px 0;
+  }
+  
+
+  .radio-title {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    color: #666666;
+    margin-right: 8px;
+  }
+
+  .radio-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: #202224;
+  }
+  .yesno_label{
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+   
+    font-weight:700 ;
+    color: #000000;
+    margin-bottom: 12px;
+    text-align: left;
+
+  }
+
+  .category-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .category-label {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    color: #666666;
+  }
+
+  .category-select {
+    width: 100%;
+    max-width: 320px;
+    height: 36px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 6px 36px 6px 12px;
+    background: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #202224;
+  }
+
+  /* Show placeholder look when empty value selected */
+  .category-select[value=""] {
+    color: #9aa0a6;
+  }
+
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .select-wrapper::after {
+    content: "\25BC";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+    font-size: 12px;
+  }
+
+  /* Force placeholder color via wrapper when empty (cross-browser fallback) */
+  .select-wrapper.placeholder .category-select {
+    color: #9aa0a6;
+  }
+
+  .justification-block {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .justification-label {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    color: #666666;
+  }
+
+  .justification-textarea {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 16px;
+    resize: vertical;
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    background-color: #ffffff;
+    color: black;
+    box-sizing: border-box;
+  }
+
+  /* Ensure view policies sits with some top spacing like screenshot */
+  .view-policies-section {
+    margin-top: 24px;
+  }
+  
+  .submit-row {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+  }
+
+  .submit-row.within-form {
+    justify-content: flex-start;
+    padding: 8px 0 24px 0;
+    margin-top: 0;
+  }
+  
+  .submit-button {
+    background: #006ffd;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background: #0057c6;
+  }
+  
+  /* View Policies Section */
+  .view-policies-section {
+    margin-top: 12vh;
+    padding: 0 ;
+    padding-right: 12vh;
+  }
+  
+  .view-policies-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #666666;
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+  }
+  
+  .view-policies-link:hover {
+    color: #006ffd;
+  }
+  
+  .view-policies-link img {
+    opacity: 0.7;
+  }
+  
+  .view-policies-link:hover img {
+    opacity: 1;
+  }
+  /* Style for select dropdown */
+  .radio-option input[type="radio"] {
+  accent-color: rgba(131,131,131,1);
+  margin-right: 6px;
+  background-color: #ffff;
+}
+
+/* Hide default radio */
+.radio-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Custom radio appearance */
+.radio-option {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-option span {
+  font-size: 15px;
+  margin-right: 18px;
+}
+
+/* The custom radio circle */
+.radio-option input[type="radio"] + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #bdbdbd; /* gray border */
+  border-radius: 50%;
+  background: #fff; /* white inside */
+  box-sizing: border-box;
+}
+
+/* Show dot when checked */
+.radio-option input[type="radio"]:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: rgba(131,131,131,1); /* your accent color */
+  border-radius: 50%;
+}
+
+/* Optional: focus style */
+.radio-option input[type="radio"]:focus + span::before {
+  border-color: rgba(131,131,131,1)
+}
+  
+  /* Comment Section */
+  .comment-section {
+    margin-top: 16px;
+    padding: 0 8px;
+  }
+
+  .comment-wrapper {
+    position: relative;
+  }
+
+  .comment-textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 16px;
+    resize: vertical;
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    background-color: #ffffff;
+    color: black;
+    box-sizing: border-box;
+  }
+
+  .char-counter {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    font-size: 12px;
+    color: #666666;
+  }
+
+  /* Action buttons */
+  .actions-row {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .restart-button {
+    background: #eef2f7;
+    color: #38AEE0;
+    border: 1px solid #38AEE0;
+  }
+
+  .restart-button:hover {
+    background: #e3e9f1;
+  }
+
+  .approve-button {
+    background: #38AEE0;
+    color: #ffffff;
+  }
+
+  .approve-button:hover {
+    background: #0057c6;
+  }
+
+  /* Transfer Workflow Section */
+  .transfer-workflow {
+    width: 96%;
+    margin-top: 32px;
+    margin-right:12%;
+    background: #EFF6FF;
+    border-radius: 8px;
+    padding: 12px 0px;
+    padding-right: 21px;
+    padding-left:10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 700;
+    color: #202224;
+  }
+
+  
+  .transfer-workflow-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 25%;
+  }
+
+  .clippath-icon {
+    margin-right: 4px;
+  }
+
+  .transfer-title {
+    font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #202224;
+  }
+
+  .transfer-arrow {
+    font-size: 18px;
+    color: #202224;
+    margin-left: 4px;
+  }
