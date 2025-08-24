@@ -1,5 +1,5 @@
 .required-info-section {
-    padding: 16px 32px;
+  padding: 1px 32px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -110,6 +110,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
   }
   
   .reason-select {
