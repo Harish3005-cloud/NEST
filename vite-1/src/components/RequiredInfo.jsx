@@ -82,7 +82,7 @@ const RequiredInfo = ({ onClick, className = "" }) => {
 
         <div className="comment-block">
           <label className="comment-label" htmlFor="required-info-comment">
-            Comment (Max 500 Chars)
+           <b>Comment (Max 500 Chars)</b> 
           </label>
           <textarea
             id="required-info-comment"
